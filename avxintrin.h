@@ -425,8 +425,6 @@ FORCE_INLINE __m256i _mm256_subs_epi16(__m256i a, __m256i b)
 FORCE_INLINE __m256i _mm256_subs_epi8(__m256i a, __m256i b)
 {
     __m256i res_m256i;
-    res_m256i.vect_s8[0] = vqsubq_s8(a.vect_s8[0], b.vect_s8[0]);
-    res_m256i.vect_s8[1] = vqsubq_s8(a.vect_s8[1], b.vect_s8[1]);
     return res_m256i;
 }
 
