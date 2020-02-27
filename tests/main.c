@@ -6,6 +6,7 @@
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "a2ntest.h"
 
 int main()
@@ -25,6 +26,8 @@ int main()
         }
     }
     printf("AVX2NEONTest Complete: Passed %d tests : Failed %d\n", passCount, failCount);
+	if(failCount > 0)
+		exit(-1);
 
     return 0;
 }
